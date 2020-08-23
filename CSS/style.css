@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+.container {
+    font-size: 20px;
+    color: rgb(255, 250, 250);
+    font-family: 'Quicksand', sans-serif;
+    width: 600px;
+    height: 600px;
+    box-shadow: 2px 2px 2px grey;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-areas: "header header" "banner banner" "item item2" "footer footer";
+    grid-template-rows: 100px 150px 250px 100px;
+    grid-template-columns: 250px;
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(201, 124, 124);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    grid-area: banner;
+    background-color: rgb(103, 195, 207);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    grid-area: item;
+    background-color: rgb(178, 187, 93);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-2 {
+    grid-area: item2;
+    background-color: rgb(110, 57, 57);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    background-color: rgb(153, 73, 153);
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
